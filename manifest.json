@@ -1,0 +1,18 @@
+{
+  "name": "Pin all tabs",
+  "version": "1.0",
+  "description": "Pins all tabs in the current window.",
+  "permissions": [
+    "bookmarks",
+    "contextMenus",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["bg.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "pin.png"
+  },
+  "manifest_version": 2
+}
