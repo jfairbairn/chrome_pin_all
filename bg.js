@@ -9,7 +9,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
         break;
       }
     }
-    console.log(allPinned);
+
     for (var i in tabs) {
       chrome.tabs.update(tabs[i].id, {pinned: !allPinned});
     }
